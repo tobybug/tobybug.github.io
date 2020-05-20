@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+	<title>Scrabble Blocks Maker</title>
+	<script type="text/javascript">
+		function main() {
+			var row1 = document.getElementById("row1").value;
+			var row2 = document.getElementById("row2").value;
+			var row3 = document.getElementById("row3").value;
+			document.getElementById("link").innerHTML = '<p>Your link:</p><a href="../scrabbletext/index.html?row1='+row1+'&row2='+row2+'&row3='+row3+'">here</a>';
+		}
+	</script>
+  </head>
+  <body>
+	<p>Enter your custom text here!</p>
+	<p>Use only capital or lowercase letters and use a _ for spaces.</p>
+	Row 1<br/>
+	<textarea id="row1"></textarea>
+	<br/>Row 2<br/>
+	<textarea id="row2"></textarea>
+	<br/>Row 3<br/>
+	<textarea id="row3"></textarea>
+	<br/>
+	<button type="button" onclick="main()">Submit</button>
+	<div id="link">
+
+	</div>
+  </body>
+</html>
+
+<style>
+
+</style>
